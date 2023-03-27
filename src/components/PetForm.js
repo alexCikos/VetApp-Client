@@ -33,7 +33,7 @@ const PetForm = () => {
     formData.append("photo", photo)
 
     // Accessing the createPet route
-    const response = await fetch("https://VetApp117-api.com/createPet", {
+    const response = await fetch("https://vetapp117-api.onrender.com/createPet", {
       // Setting the request to a post request and sending the FormData instance as the body
       method: "POST",
       body: formData,

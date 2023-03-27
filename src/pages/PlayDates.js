@@ -10,7 +10,7 @@ const PlayDates = () => {
   useEffect(() => {
     const fetchPlayDates = async () => {
       try {
-        const response = await fetch(`https://VetApp117-api.com/getUserPlaydates`, {
+        const response = await fetch(`https://vetapp117-api.onrender.com/getUserPlaydates`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${user.token}`
@@ -29,7 +29,7 @@ const PlayDates = () => {
   useEffect(() => {
     const fetchOwners = async () => {
       const ownerPromises = playDates.map(async playDate => {
-        const senderResponse = await fetch(`https://VetApp117-api.com/getUser/${playDate.sender}`, {
+        const senderResponse = await fetch(`https://vetapp117-api.onrender.com/getUser/${playDate.sender}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${user.token}`
@@ -37,7 +37,7 @@ const PlayDates = () => {
         })
         const senderData = await senderResponse.json()
 
-        const recipientResponse = await fetch(`https://VetApp117-api.com/getUser/${playDate.recipient}`, {
+        const recipientResponse = await fetch(`https://vetapp117-api.onrender.com/getUser/${playDate.recipient}`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${user.token}`
@@ -66,7 +66,7 @@ const PlayDates = () => {
   useEffect(() => {
     const fetchCurrentUser = async () => {
       try {
-        const response = await fetch(`https://VetApp117-api.com/getCurrentUser`, {
+        const response = await fetch(`https://vetapp117-api.onrender.com/getCurrentUser`, {
           method: "GET",
           headers: {
             Authorization: `Bearer ${user.token}`
@@ -85,7 +85,7 @@ const PlayDates = () => {
 
   const handleReject = async playDateId => {
     try {
-      const response = await fetch(`https://VetApp117-api.com/rejectPlayDate/${playDateId}`, {
+      const response = await fetch(`https://vetapp117-api.onrender.com/rejectPlayDate/${playDateId}`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${user.token}`
@@ -112,7 +112,7 @@ const PlayDates = () => {
 
   const handleAccept = async playDateId => {
     try {
-      const response = await fetch(`https://VetApp117-api.com/acceptPlayDate/${playDateId}`, {
+      const response = await fetch(`https://vetapp117-api.onrender.com/acceptPlayDate/${playDateId}`, {
         method: "PATCH",
         headers: {
           Authorization: `Bearer ${user.token}`
@@ -139,7 +139,7 @@ const PlayDates = () => {
 
   const handleDelete = async playDateId => {
     try {
-      const response = await fetch(`https://VetApp117-api.com/deletePlayDate/${playDateId}`, {
+      const response = await fetch(`https://vetapp117-api.onrender.com/deletePlayDate/${playDateId}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${user.token}`

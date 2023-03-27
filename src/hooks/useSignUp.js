@@ -17,7 +17,7 @@ export const useSignup = () => {
     setError(null)
 
     // Using the fetch function to access the sign up route
-    const response = await fetch("/signup", {
+    const response = await fetch("https://vetapp117-api.onrender.com/signup", {
       // Setting the request to a post request
       method: "POST",
       // Setting the content-type to "application/json"

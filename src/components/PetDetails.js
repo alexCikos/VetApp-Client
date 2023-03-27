@@ -17,14 +17,14 @@ const PetDetails = ({ pet }) => {
   useEffect(() => {
     const authenticateImageURL = async () => {
       if (user) {
-        const response = await fetch(`https://VetApp117-api.com/${pet.photo}`, {
+        const response = await fetch(`https://vetapp117-api.onrender.com/${pet.photo}`, {
           headers: {
             Authorization: `Bearer ${user.token}`,
             Accept: "image/*"
           }
         })
         if (response.ok) {
-          setAuthenticatedImageURL(`https://VetApp117-api.com/${pet.photo}`)
+          setAuthenticatedImageURL(`https://vetapp117-api.onrender.com/${pet.photo}`)
         }
       }
     }
@@ -39,7 +39,7 @@ const PetDetails = ({ pet }) => {
     }
 
     // Calls this route from the backend with the pet id
-    const response = await fetch("https://VetApp117-api.com/deletePet/" + pet._id, {
+    const response = await fetch("https://vetapp117-api.onrender.com/deletePet/" + pet._id, {
       // Setting the route method to delete
       method: "DELETE",
       // Setting the headers with the authorization and token

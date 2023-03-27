@@ -18,7 +18,7 @@ export const useLogin = () => {
     setError(null)
 
     // Using the fetch function to use the login route from the backend
-    const response = await fetch("/login", {
+    const response = await fetch("https://vetapp117-api.onrender.com/login", {
       // Setting the fetch to a post request
       method: "POST",
       // Setting the headers

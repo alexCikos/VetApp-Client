@@ -9,7 +9,7 @@ function SearchBar() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const res = await fetch(`https://VetApp117-api.com?q=${query}`, {
+      const res = await fetch(`https://vetapp117-api.onrender.com?q=${query}`, {
         method: "GET",
         headers: {
           Authorization: `Bearer ${user.token}`

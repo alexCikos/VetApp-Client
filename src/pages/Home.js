@@ -15,7 +15,7 @@ const Home = () => {
 
   // A function to fetch pets, acessing the getPets route
   const fetchPets = async () => {
-    const response = await fetch("https://VetApp117-api.com/getPets", {
+    const response = await fetch("https://vetapp117-api.onrender.com/getPets", {
       // Setting authorization header with the user token
       headers: {
         Authorization: `Bearer ${user.token}`

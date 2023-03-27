@@ -13,7 +13,7 @@ const PetProfile = () => {
   useEffect(() => {
     const fetchPet = async () => {
       try {
-        const response = await fetch(`https://VetApp117-api.com/getPet/${id}`, {
+        const response = await fetch(`https://vetapp117-api.onrender.com/getPet/${id}`, {
           // Setting the route method to delete
           method: "GET",
           // Setting the headers with the authorization and token
@@ -35,7 +35,7 @@ const PetProfile = () => {
     const fetchOwner = async () => {
       if (pet !== null) {
         try {
-          const response = await fetch(`https://VetApp117-api.com/getUser/${pet.owner}`, {
+          const response = await fetch(`https://vetapp117-api.onrender.com/${pet.owner}`, {
             // Setting the route method to delete
             method: "GET",
             // Setting the headers with the authorization and token
@@ -62,7 +62,7 @@ const PetProfile = () => {
     const sendMessage = { message }
 
     try {
-      await fetch(`https://VetApp117-api.com/sendPlayDate/${pet.owner}`, {
+      await fetch(`https://vetapp117-api.onrender.com/${pet.owner}`, {
         // Setting the route method to delete
         method: "POST",
         body: JSON.stringify(sendMessage),
@@ -83,7 +83,7 @@ const PetProfile = () => {
     <div>
       <div className="petProfile">
         <h1>{pet.name}</h1>
-        <img src={`https://VetApp117-api.com/${pet.photo}`} />
+        <img src={`https://vetapp117-api.onrender.com/${pet.photo}`} />
 
         <p>
           <strong>Breed: </strong>
