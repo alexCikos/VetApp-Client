@@ -12,10 +12,14 @@ import SearchBar from "./SearchBar"
 import { ThemeContext } from "../App"
 import { SidebarData, NLSidebarData } from "./NavBarData"
 
+import catImage from "../images/cats-header.jpg"
+import dogImage from "../images/dogs-header.jpg"
+import catDogImage from "../images/cat-dog-header.jpg"
+
 import "./Navbar.css"
 
 // Nav bar component
-const Navbar = () => {
+const Navbar = props => {
   const { toggleTheme, theme } = useContext(ThemeContext)
   const [sidebar, setSidebar] = useState(false)
 
@@ -45,6 +49,30 @@ const Navbar = () => {
         {user && <SearchBar />}
 
         {user && <p>{user.email}</p>}
+
+        <div className="persPref">
+          Personalise this website
+          <div className="userPreference">
+            <button
+              className="button-13"
+              onClick={() => props.onButtonClick(catImage)}
+            >
+              Cat
+            </button>
+            <button
+              className="button-13"
+              onClick={() => props.onButtonClick(dogImage)}
+            >
+              Dog
+            </button>
+            <button
+              className="button-13"
+              onClick={() => props.onButtonClick(catDogImage)}
+            >
+              Both
+            </button>
+          </div>
+        </div>
 
         <nav>
           <div className="switch">
