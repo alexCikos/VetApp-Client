@@ -62,7 +62,7 @@ const PetProfile = () => {
     const sendMessage = { message }
 
     try {
-      await fetch(`https://vetapp117-api.onrender.com/${pet.owner}`, {
+      await fetch(`https://vetapp117-api.onrender.com/sendPlayDate/${pet.owner}`, {
         // Setting the route method to delete
         method: "POST",
         body: JSON.stringify(sendMessage),
