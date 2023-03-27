@@ -214,6 +214,7 @@ table {
   width: 400px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.064);
   padding: 0;
+  z-index: 9999;
 }
 
 #dark table {
