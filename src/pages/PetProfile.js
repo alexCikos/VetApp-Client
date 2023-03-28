@@ -98,7 +98,7 @@ const PetProfile = () => {
           </p>
         )}
         <p>
-          <strong>Write a Message!</strong>
+          <strong>Write a Message to set up a Date and Time!</strong>
         </p>
         <input
           type="text"
