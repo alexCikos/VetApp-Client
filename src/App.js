@@ -72,7 +72,7 @@ function App() {
               />
               <Route
                 path="/contact"
-                element={<ContactPage />}
+                element={<ContactPage className="Contact-Page" />}
               />
               <Route
                 path="/pets"

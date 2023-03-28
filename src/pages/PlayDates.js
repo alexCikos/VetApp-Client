@@ -154,7 +154,7 @@ const PlayDates = () => {
   }
 
   return (
-    <div>
+    <div className="PlayDatesPage">
       <h2>Suss your PlayDates!</h2>
       <div className="PlayDates">
         {playDates.map(playDate => (

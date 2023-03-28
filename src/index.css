@@ -61,9 +61,9 @@ body {
 }
 header {
   background: #fff;
+  width: 100%;
 }
 header .container {
-  max-width: 1400px;
   margin: 0 auto;
   padding: 10px 20px;
   display: flex;
@@ -469,4 +469,12 @@ img {
 
 .IMAGE {
   width: 800px;
+}
+
+.create {
+  width: 100%;
+}
+
+.PlayDatesPage {
+  height: 60vh;
 }
