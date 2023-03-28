@@ -18,6 +18,7 @@ import PlayDates from "./pages/PlayDates"
 import HomePage from "./pages/HomePage"
 import PeoplePage from "./pages/PeoplePage"
 import ServicePage from "./pages/Services"
+import ContactPage from "./pages/Contact"
 import ImageDisplay from "./components/ImageDisplay"
 
 export const ThemeContext = createContext(null)
@@ -68,6 +69,10 @@ function App() {
               <Route
                 path="/services"
                 element={<ServicePage />}
+              />
+              <Route
+                path="/contact"
+                element={<ContactPage />}
               />
               <Route
                 path="/pets"

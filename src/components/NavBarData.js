@@ -25,6 +25,12 @@ export const SidebarData = [
     cName: "nav-text"
   },
   {
+    title: "Contact",
+    path: "/contact",
+    icon: <AiIcons.AiFillContacts />,
+    cName: "nav-text"
+  },
+  {
     title: "Your Pets",
     path: "/pets",
     icon: <MdIcons.MdPets />,
@@ -67,6 +73,12 @@ export const NLSidebarData = [
     title: "Services",
     path: "/services",
     icon: <MdIcons.MdOutlineMiscellaneousServices />,
+    cName: "nav-text"
+  },
+  {
+    title: "Contact",
+    path: "/contact",
+    icon: <AiIcons.AiFillContacts />,
     cName: "nav-text"
   }
 ]

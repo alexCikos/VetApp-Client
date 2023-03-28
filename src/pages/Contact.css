@@ -1,0 +1,81 @@
+/* Contact.css */
+
+.contact-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-banner {
+  background-color: rgb(139, 85, 255);
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-banner h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+  padding: 0 2rem;
+  margin-top: 2rem;
+}
+
+.contact-main img {
+  width: 50%;
+  object-fit: cover;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 24px;
+}
+
+label {
+  font-size: 18px;
+  margin-top: 1rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 16px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+}
+
+textarea {
+  height: 8rem;
+}
+
+button[type="submit"] {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: rgb(139, 85, 255);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
